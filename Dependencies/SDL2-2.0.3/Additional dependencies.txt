@@ -1,0 +1,3 @@
+In Visual Studio:
+SDL2.lib;
+SDL2main.lib; 
