@@ -20,15 +20,15 @@ Its a 2-player 2D game created in SDL for Windows.
 | ------------- | ------------------------------ |
 | Rose          | Lose game                      |
 | Carrot        | Score 1 Point                  |
-|               | Increases enemy speed          |
+|               | Increase enemy speed           |
 | Green flower  | Get poisoned                   |
 | Blue flower   | Reduce player speed            |
 |               | Increase life left from poison |
 | Pink flower   | Invert player controls for 2s  |
-|               | Invert player controls for 4s  |
-| Yellow flower | Lose 1 Point                   |
-|               | Increase player speed greatly |
-| `Poison`      | Lose game in Poison time (10s) |
+|               | Invert enemy controls for 4s   |
+| Yellow flower | Lose 3 Point                   |
+|               | Increase player speed greatly  |
+|`Poison effect`| Lose game in Poison time (10s) |
 
 ---
 
@@ -38,3 +38,8 @@ Its a 2-player 2D game created in SDL for Windows.
 #### How I did it?
  Mostly using <a href="http://lazyfoo.net/SDL_tutorials/">LazyFoo</a> SDL tutorials for understanding how SDL library works. Then I found a helpful <a href="http://staniks.github.io/">Staniks</a> game tutorial where he implemented a small coin game.
  The game is not really optimized and the code is kinda messy. It's not that bad, but it certainly lacks comments. It was one of my first projects, so sorry for that, if anyone ever finds this source code somewhat useful.
+ 
+---
+
+### Forgotten bugs
+- Wrong speed (higher than expected), when moving diagonally
