@@ -30,6 +30,10 @@ Its a 2-player 2D game created in SDL for Windows.
 |               | Increase player speed greatly  |
 |`Poison effect`| Lose game in Poison time (10s) |
 
+### How to win? 
+- Avoid roses while trying to collect as many as possible carrots (Collecting carrots increases enemy speed, which makes him harder to avoid roses)
+- In case you get poisoned, catch the enemy player to win the game. Or lose, if poison time hits zero.
+
 ---
 
 ## About 
