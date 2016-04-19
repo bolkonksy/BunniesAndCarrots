@@ -10,7 +10,10 @@ Its a 2-player 2D game created in SDL for Windows.
 1. Open *FirstGameSDL.sln* and compile the whole project
 2. Copy Textures folder from *FirstGameSDL/Textures* to *Release* (or *Debug*) folder in project solution folder
 3. Put all dll files from *DLL* folder in *Release* (or *Debug*) folder in project solution folder
+
 - Optional: Edit *configuration.h* to change certain game options, such as player speed, etc.
+
+---
 
 ## How to play
   - Player 1 controls: Arrow keys
