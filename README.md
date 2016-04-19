@@ -40,7 +40,7 @@ Its a 2-player 2D game created in SDL for Windows.
 ---
 
 ## About 
- I made this game back in 2014 as a seminar project for a collage course Object-Oriented programming. I could do much simpler project for the seminar, but I wanted to make something fun and by the way learn how videogames are made. My friend drew all the textures.
+ I made this game back in 2014 as a seminar project for a college course Object-Oriented programming. I could do much simpler project for the seminar, but I wanted to make something fun and by the way learn how videogames are made. My friend drew all the textures.
  
 #### How I did it?
  Mostly using <a href="http://lazyfoo.net/SDL_tutorials/">LazyFoo</a> SDL tutorials for understanding how SDL library works. Then I found a helpful <a href="http://staniks.github.io/">Staniks</a> game tutorial where he implemented a small coin game.
