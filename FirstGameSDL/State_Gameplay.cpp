@@ -132,7 +132,7 @@ void State_Gameplay::Update(float deltaTime)
 				Player1.setScore(1);
 				Player2.incrementSpeed();
 
-				/* Spawn them correctly*/
+				/* Spawn them correctly */
 				while (collideWithOtherObjects(_carrots[i])) {
 					_carrots[i]->relocate();
 				}
@@ -142,7 +142,7 @@ void State_Gameplay::Update(float deltaTime)
 				Player2.setScore(1);
 				Player1.incrementSpeed();
 
-				/* Spawn them correctly*/
+				/* Spawn them correctly */
 				while (collideWithOtherObjects(_carrots[i])) {
 					_carrots[i]->relocate();
 				}
@@ -174,7 +174,7 @@ void State_Gameplay::Update(float deltaTime)
 				if (Player1.isMad())
 					Player1.increasePoisonTime(CFG::POISON_TIME_INCREASE);
 
-				/* Spawn them correctly*/
+				/* Spawn them correctly */
 				while (collideWithOtherObjects(_flowers_slow[i])) {
 					_flowers_slow[i]->spawn();
 				}
@@ -185,7 +185,7 @@ void State_Gameplay::Update(float deltaTime)
 				if (Player2.isMad())
 					Player2.increasePoisonTime(CFG::POISON_TIME_INCREASE);
 
-				/* Spawn them correctly*/
+				/* Spawn them correctly */
 				while (collideWithOtherObjects(_flowers_slow[i])) {
 					_flowers_slow[i]->spawn();
 				}
@@ -238,7 +238,7 @@ void State_Gameplay::Update(float deltaTime)
 				Player1.incrementSpeed();
 				Player1.setScore(-2);
 
-				/* Spawn them correctly*/
+				/* Spawn them correctly */
 				while (collideWithOtherObjects(_flowers_speed[i])) {
 					_flowers_speed[i]->spawn();
 				}
@@ -247,7 +247,7 @@ void State_Gameplay::Update(float deltaTime)
 				Player2.incrementSpeed();
 				Player2.setScore(-2);
 
-				/* Spawn them correctly*/
+				/* Spawn them correctly */
 				while (collideWithOtherObjects(_flowers_speed[i])) {
 					_flowers_speed[i]->spawn();
 				}
@@ -271,10 +271,6 @@ void State_Gameplay::Render()
 	_font->renderString((_game->getWidth() / 2) + 97 - 135, 5, std::to_string((int)Player2.getScore()));
 	_font->renderString((_game->getWidth() / 2) + 194 - 135, 5, std::to_string((int)Player2.getSpeed()));
 	
-	/*for (std::vector<Flower>::size_type i = 0; i < _flowers_dead.size(); i++) {
-		_flowers_dead[i]->render();
-	}*/
-
 	Player1.render();
 	Player2.render();
 
@@ -339,8 +335,8 @@ void State_Gameplay::Quit()
 	delete _level;
 	_level = NULL;
 
-	delete _timer;//rrr
-	_timer = NULL;//rrr
+	delete _timer;
+	_timer = NULL;
 
 	delete _rm;
 	_rm = NULL;
