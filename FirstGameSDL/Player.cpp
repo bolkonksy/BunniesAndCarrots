@@ -1,5 +1,5 @@
 #include "Player.h"
-
+#include <iostream>
 #include <sstream>
 #include <iomanip>
 #include "GameState.h"
@@ -151,8 +151,16 @@ void Player::render()
 }
 void Player::move(int dX, int dY)
 {
-	_dirX += (float)dX;
-	_dirY += (float)dY;
+	if (dX && dY)
+	{
+		_dirX += (float)dX / 1.41421356237f;
+		_dirY += (float)dY / 1.41421356237f;
+	}
+	else
+	{
+		_dirX += (float)dX;
+		_dirY += (float)dY;
+	}
 }
 void Player::setScore(unsigned int score)
 {

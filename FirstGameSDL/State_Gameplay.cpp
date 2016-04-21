@@ -104,23 +104,31 @@ void State_Gameplay::Update(float deltaTime)
 	} else {
 		const Uint8* keyboard = SDL_GetKeyboardState(NULL);
 
+		int x1 = 0, y1 = 0, x2 = 0, y2 = 0;
+
 		if (keyboard[SDL_SCANCODE_UP])
-			Player1.move(0, -1);
+			y1--;
 		if (keyboard[SDL_SCANCODE_DOWN])
-			Player1.move(0, 1);
+			y1++;
 		if (keyboard[SDL_SCANCODE_LEFT])
-			Player1.move(-1, 0);
+			x1--;
 		if (keyboard[SDL_SCANCODE_RIGHT])
-			Player1.move(1, 0);
+			x1++;
 
 		if (keyboard[SDL_SCANCODE_W])
-			Player2.move(0, -1);
+			y2--;
 		if (keyboard[SDL_SCANCODE_S])
-			Player2.move(0, 1);
+			y2++;
 		if (keyboard[SDL_SCANCODE_A])
-			Player2.move(-1, 0);
+			x2--;
 		if (keyboard[SDL_SCANCODE_D])
-			Player2.move(1, 0);
+			x2++;
+
+		if (x1 || y1)
+			Player1.move(x1, y1);
+		
+		if (x2 || y2)
+			Player2.move(x2, y2);
 
 		Player2.update(deltaTime);
 		Player1.update(deltaTime);
