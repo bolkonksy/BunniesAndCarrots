@@ -51,6 +51,7 @@ The game is not very optimized and the code is kinda messy. I also certainly lac
 
 ### Forgotten bugs
  - In-game score points don't have an effect on victory (scoring system never fully implemented)
+ - ~~Incorrect (higher) speed when moving diagonally~~ (seen in gif)
 
 ---
 
