@@ -58,5 +58,5 @@ The game is not very optimized and the code is kinda messy. I also certainly lac
 ##### Special thanks to:
  - <a href="http://sol-myr.deviantart.com/">Mirna</a> - The famous graphic designer. Did some coding also.
  - <a href="https://github.com/athnix/">athnix</a> - My dear helpful fix bugger and tester. Bad gaming skills tho. (specially at CS:GO... jk.)
- - <a href="https://github.com/gcupko00/">gcupko00</a> - Tester with some crazy gaming abilities.
+ - <a href="https://github.com/sklavko/">sklavko</a> - Tester with some crazy gaming abilities.
 
